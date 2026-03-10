@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url('./assets/fonts/RedHatText-VariableFont_wght.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url('./assets/fonts/RedHatText-Italic-VariableFont_wght.ttf');
+  font-style: italic;
+}
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+html {
+  font-family: 'Red Hat Text', sans-serif;
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  border-radius: inherit;
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p, span {
+  font-weight: 400;
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Red Hat Text', sans-serif;
+  text-wrap: balance;
+}
+
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --white: hsl(100, 100%, 100%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
+}
+
+main {
+  background-color: var(--rose-50);
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.product__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.product__section-headline {
+  font-size: 2.5rem;
+}
+
+.product__section-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.product__image-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.product__add-to-cart {
+  background-color: var(--white);
+  border: 1px solid var(--rose-400);
+  border-radius: 2rem;
+  color: var(--rose-900);
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  margin: -1.75rem auto 0;
+  padding: 0.75rem 1.5rem;;
+  width: max-content;
+  z-index: 100;
+}
+
+.product__info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__info-category {
+  color: var(--rose-500);
+  font-weight: 400;
+}
+
+.product__info-title {
+  color: var(--rose-900);
+  font-weight: 600;
+}
+
+.product__info-price {
+  color: var(--red);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.cart__section {
+  align-self: flex-start;
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.cart__section-headline {
+  color: var(--red);
+}
+
+.cart__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart__empty-icon {
+  margin: 0 auto;
+}
+
+.cart__empty-text {
+  color: var(--rose-400);
+  font-weight: 600;
+  text-align: center;
+}
