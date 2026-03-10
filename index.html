@@ -5,70 +5,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+  <main>
+    <!-- Product Section -->
+    <section class="product__section">
+      <h1 class="product__section-headline">Desserts</h1>
+      <div class="product__section-list">
+        <!-- Waffle -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-waffle-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-waffle-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffle with berries">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Waffle</span>
+            <h3 class="product__info-title">Waffle with Berries</h3>
+            <span class="product__info-price">$6.50</span>
+          </div>
+        </div>
+        <!-- Macaron -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-macaron-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-macaron-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-macaron-mobile.jpg" alt="Macaron Mix of Five">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Macaron</span>
+            <h3 class="product__info-title">Macaron Mix of Fire</h3>
+            <span class="product__info-price">$8.00</span>
+          </div>
+        </div>
+        <!-- Tiramisu -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-tiramisu-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-tiramisu-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-tiramisu-mobile.jpg" alt="Classic Tiramisu">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Tiramisu</span>
+            <h3 class="product__info-title">Classic Tiramisu</h3>
+            <span class="product__info-price">$5.50</span>
+          </div>
+        </div>
+        <!-- Baklava -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-baklava-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-baklava-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-waffle-baklava.jpg" alt="Pistachio Baklava">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Baklava</span>
+            <h3 class="product__info-title">Pistachio Baklava</h3>
+            <span class="product__info-price">$4.00</span>
+          </div>
+        </div>
+        <!-- Pie -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-meringue-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-meringue-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-meringue-mobile.jpg" alt="Lemon Meringue Pie">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Pie</span>
+            <h3 class="product__info-title">Lemon Meringue Pie</h3>
+            <span class="product__info-price">$5.00</span>
+          </div>
+        </div>
+        <!-- Cake -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-cake-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-cake-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-cake-mobile.jpg" alt="Red Velvet cake">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Cake</span>
+            <h3 class="product__info-title">Red Velvet Cake</h3>
+            <span class="product__info-price">$4.50</span>
+          </div>
+        </div>
+        <!-- Brownie -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-brownie-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-brownie-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-brownie-mobile.jpg" alt="Salted Caramel Brownie">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Brownie</span>
+            <h3 class="product__info-title">Salted Caramel Brownie</h3>
+            <span class="product__info-price">$5.50</span>
+          </div>
+        </div>
+        <!-- Panna Cotta -->
+        <div class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <!-- Desktop -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-panna-cotta-desktop.jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./assets/images/image-panna-cotta-tablet.jpg">
+              <!-- Mobile -->
+              <img src="./assets/images/image-panna-cotta-mobile.jpg" alt="Vanilla Panna Cotta">
+            </picture>
+            <button class="product__add-to-cart">
+              <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product__info-wrapper">
+            <span class="product__info-category">Panna Cotta</span>
+            <h3 class="product__info-title">Vanilla Panna Cotta</h3>
+            <span class="product__info-price">$6.50</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Desserts
+    <!-- Cart Section -->
+     <section class="cart__section">
+      <h2 class="cart__section-headline">Your Cart <span class="cart__counter">(0)</span></h2>
+      <div class="cart__list-wrapper">
+        <img class="cart__empty-icon" src="./assets/images/illustration-empty-cart.svg" alt="Empty cart icon">
+        <p class="cart__empty-text">Your added items will appear here</p>
+      </div>
+     </section>
+  </main>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
-
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
