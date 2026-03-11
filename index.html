@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
-  
+  <script src="./main.js" defer></script>
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -33,7 +33,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffle with berries">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="waffle">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -55,7 +55,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-creme-brulee-mobile.jpg" alt="Vanilla Bean Creme Brulee">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="creme-brulee">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -77,7 +77,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-macaron-mobile.jpg" alt="Macaron Mix of Five">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="macaron">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -99,7 +99,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-tiramisu-mobile.jpg" alt="Classic Tiramisu">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="tiramisu">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -121,7 +121,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-waffle-baklava.jpg" alt="Pistachio Baklava">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="baklava">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -143,7 +143,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-meringue-mobile.jpg" alt="Lemon Meringue Pie">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="pie">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -165,7 +165,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-cake-mobile.jpg" alt="Red Velvet cake">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="cake">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -187,7 +187,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-brownie-mobile.jpg" alt="Salted Caramel Brownie">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="brownie">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -209,7 +209,7 @@
                 <!-- Mobile -->
                 <img src="./assets/images/image-panna-cotta-mobile.jpg" alt="Vanilla Panna Cotta">
               </picture>
-              <button class="product__add-to-cart">
+              <button class="product__add-to-cart" data-id="panna-cotta">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
@@ -225,7 +225,7 @@
   
       <!-- Cart Section -->
       <section class="cart__section">
-        <h2 class="cart__section-headline">Your Cart <span class="cart__counter">(0)</span></h2>
+        <h2 class="cart__section-headline">Your Cart (<span class="cart__counter">0</span>)</h2>
         <div class="cart__list-wrapper">
           <img class="cart__empty-icon" src="./assets/images/illustration-empty-cart.svg" alt="Empty cart icon">
           <p class="cart__empty-text">Your added items will appear here</p>
