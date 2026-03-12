@@ -38,7 +38,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Waffle with Berries">
+            <div class="product__info-wrapper" data-id="waffle">
               <span class="product__info-category">Waffle</span>
               <h3 class="product__info-title">Waffle with Berries</h3>
               <span class="product__info-price">$6.50</span>
@@ -60,7 +60,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Vanilla Bean Crème Brûlée">
+            <div class="product__info-wrapper" data-id="creme-brulee">
               <span class="product__info-category">Crème Brûlée</span>
               <h3 class="product__info-title">Vanilla Bean Crème Brûlée</h3>
               <span class="product__info-price">$7.00</span>
@@ -82,7 +82,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Macaron Mix of Fire">
+            <div class="product__info-wrapper" data-id="macaron">
               <span class="product__info-category">Macaron</span>
               <h3 class="product__info-title">Macaron Mix of Fire</h3>
               <span class="product__info-price">$8.00</span>
@@ -104,7 +104,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Classic Tiramisu">
+            <div class="product__info-wrapper" data-id="tiramisu">
               <span class="product__info-category">Tiramisu</span>
               <h3 class="product__info-title">Classic Tiramisu</h3>
               <span class="product__info-price">$5.50</span>
@@ -119,14 +119,14 @@
                 <!-- Tablet -->
                 <source media="(min-width: 768px)" srcset="./assets/images/image-baklava-tablet.jpg">
                 <!-- Mobile -->
-                <img src="./assets/images/image-waffle-baklava.jpg" alt="Pistachio Baklava">
+                <img src="./assets/images/image-baklava-mobile.jpg" alt="Pistachio Baklava">
               </picture>
               <button class="product__add-to-cart">
                 <img class="product__add-to-cart-icon" src="./assets/images/icon-add-to-cart.svg">
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Pistachio Baklava">
+            <div class="product__info-wrapper" data-id="baklava">
               <span class="product__info-category">Baklava</span>
               <h3 class="product__info-title">Pistachio Baklava</h3>
               <span class="product__info-price">$4.00</span>
@@ -148,7 +148,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Lemon Meringue Pie">
+            <div class="product__info-wrapper" data-id="meringue">
               <span class="product__info-category">Pie</span>
               <h3 class="product__info-title">Lemon Meringue Pie</h3>
               <span class="product__info-price">$5.00</span>
@@ -170,7 +170,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Red Velvet Cake">
+            <div class="product__info-wrapper" data-id="cake">
               <span class="product__info-category">Cake</span>
               <h3 class="product__info-title">Red Velvet Cake</h3>
               <span class="product__info-price">$4.50</span>
@@ -192,7 +192,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Salted Caramel Brownie">
+            <div class="product__info-wrapper" data-id="brownie">
               <span class="product__info-category">Brownie</span>
               <h3 class="product__info-title">Salted Caramel Brownie</h3>
               <span class="product__info-price">$5.50</span>
@@ -214,7 +214,7 @@
                 Add to Cart
               </button>
             </div>
-            <div class="product__info-wrapper" data-id="Vanilla Panna Cotta">
+            <div class="product__info-wrapper" data-id="panna-cotta">
               <span class="product__info-category">Panna Cotta</span>
               <h3 class="product__info-title">Vanilla Panna Cotta</h3>
               <span class="product__info-price">$6.50</span>
@@ -233,6 +233,14 @@
       </section>
     </div>
   </main>
+
+  <!-- Order Confirmation Dialog -->
+  <dialog class="confirmation-order__dialog">
+    <img class="confirmation-order__icon" src="./assets/images/icon-order-confirmed.svg" alt="">
+    <h2 class="confirmation-order__headline">Order Confirmed</h2>
+    <p class="confirmation-order__text">We hope you enjoy your food!</p>
+    <div class="confirmation-order__list"></div>
+  </dialog>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
